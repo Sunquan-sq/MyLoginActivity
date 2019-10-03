@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--注册界面-->
+<!--这里的布局放置是： 1 个 ImageView 控件，用于显示用户头像；3 个 EditText 控件，用于输入用户名、密码、再次输入密码；1 个 Button 控件为注册按钮-->
+<!--修改 activity_register.xml 为 LinearLayout 布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/main_title_bar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="35dp"
+            android:src="@drawable/qq_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_qq_login"
+            android:layout_width="250dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="67dp"
+            android:layout_height="wrap_content"
+            android:text="点击QQ登录"
+            android:textColor="#0e0e0e"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
